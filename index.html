@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript XP - Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="window">
+
+        <header class="titlebar">
+            <span>JavaScript XP - Desafio do Código</span>
+
+            <div class="controls">
+                <span>_</span>
+                <span>□</span>
+                <span>×</span>
+            </div>
+        </header>
+
+        <nav class="toolbar">
+            Arquivo　 Editar　 Exibir　 Ajuda
+        </nav>
+
+        <section class="content">
+
+            <div class="intro">
+                <div class="logo">JS // SYSTEM QUIZ</div>
+
+                <h1>Desafio do Código</h1>
+
+                <p>
+                    Teste seus conhecimentos em JavaScript!
+                </p>
+            </div>
+
+            <div id="quiz">
+
+                <div class="status">
+                    <span id="questionCount">
+                        Pergunta 1 de 7
+                    </span>
+
+                    <span id="score">
+                        Pontos: 0
+                    </span>
+                </div>
+
+                <div class="progress">
+                    <div id="progressBar"></div>
+                </div>
+
+                <div class="question-box">
+
+                    <div id="topic" class="topic">
+                        Tema
+                    </div>
+
+                    <h2 id="question">
+                        Carregando pergunta...
+                    </h2>
+
+                    <div id="answers" class="answers"></div>
+
+                    <p id="feedback" class="feedback"></p>
+
+                </div>
+
+                <div class="actions">
+
+                    <span>
+                        Escolha uma alternativa!
+                    </span>
+
+                    <button id="nextButton" disabled>
+                        Próxima pergunta »
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div id="result" class="result hidden">
+
+                <div class="logo">
+                    QUIZ FINALIZADO
+                </div>
+
+                <h1>Parabéns por concluir!</h1>
+
+                <div id="finalScore" class="big-score">
+                    0/7
+                </div>
+
+                <p id="resultMessage"></p>
+
+                <button id="restartButton">
+                    ↻ Jogar novamente
+                </button>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <span>Pronto</span>
+            <span>JavaScript XP • Edição educacional</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
